@@ -1,0 +1,37 @@
+{
+  "name": "server-planner",
+  "version": "1.0.0",
+  "description": "A basic node-express server with support for ES6 transpiling, linting, adding environment variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js --exec babel-node --watch ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAMOTZ/server-planner.git"
+  },
+  "keywords": [
+    "server",
+    "vm",
+    "planner",
+    "server-planner"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAMOTZ/server-planner/issues"
+  },
+  "homepage": "https://github.com/IAMOTZ/server-planner#readme",
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "core-js": "^2.6.11",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.4"
+  }
+}
