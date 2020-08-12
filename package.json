@@ -44,5 +44,11 @@
     "eslint-plugin-import": "^2.16.0",
     "jest": "^26.3.0",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/src/**/*.js",
+      "!**/src/tests/**"
+    ]
   }
 }
