@@ -1,9 +1,6 @@
 import express from 'express';
 import logger from 'morgan';
-import dotEnv from 'dotenv';
 import routes from './routes';
-
-dotEnv.config();
 
 const app = express();
 
@@ -12,7 +9,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const port = process.env.PORT || 7000;
+const port = 7000;
 
 app.use('/', routes);
 
