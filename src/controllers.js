@@ -30,7 +30,7 @@ export const planServer = (req, res) => {
   const validationResult = validation.validateServerPlanningRequest(req.body);
   if (!validationResult.valid) {
     log.debug('Request data is not valid');
-    res.status(401).json({
+    res.status(400).json({
       ok: false, errors: validationResult.error,
     });
     return;
