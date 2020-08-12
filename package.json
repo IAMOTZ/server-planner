@@ -4,9 +4,9 @@
   "description": "A basic node-express server with support for ES6 transpiling, linting, adding environment variables.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/server.js --exec babel-node --watch ./src",
     "start": "babel src --out-dir build && node build/server.js",
+    "test": "jest --coverage",
     "lint": "eslint ./src"
   },
   "repository": {
@@ -38,8 +38,10 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
+    "@types/jest": "^26.0.9",
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^26.3.0"
   }
 }

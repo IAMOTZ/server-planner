@@ -11,13 +11,9 @@ export default class Server {
    * @param {ServerType} serverType
    */
   constructor(serverType) {
-    /** @private */
     this.CPU = serverType.CPU;
-    /** @private */
     this.RAM = serverType.RAM;
-    /** @private */
     this.HDD = serverType.HDD;
-    /** @private */
     this.vmCount = 0;
   }
 
@@ -44,13 +40,5 @@ export default class Server {
     this.RAM -= RAM;
     this.HDD -= HDD;
     this.vmCount += 1;
-  }
-
-  /**
-   * @returns {number} The number of virtuals machines successfully
-   * added to a server instance
-   */
-  get vmCount() {
-    return this.vmCount;
   }
 }

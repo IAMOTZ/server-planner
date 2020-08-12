@@ -22,7 +22,7 @@ const serverPlanner = ({ serverType, virtualMachines }) => {
       if (server.vmCount === 1) serverCount += 1;
     } else if (new Server(serverType).canAccomodateVM(vm)) {
       server = new Server(serverType);
-      server.addVm(vm);
+      server.addVM(vm);
       serverCount += 1;
     } else {
       skippedVMs.push(index);

@@ -20,7 +20,7 @@ const validateServerPlanningRequest = (requestData) => {
   });
 
   if (result.error) return { valid: false, error: result.error };
-  return { valid: true, data: result };
+  return { valid: true, data: result.value };
 };
 
 export default {
