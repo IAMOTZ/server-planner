@@ -33,7 +33,8 @@
     "express": "^4.16.4",
     "joi": "^17.2.0",
     "morgan": "^1.9.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "simple-node-logger": "^18.12.24"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
